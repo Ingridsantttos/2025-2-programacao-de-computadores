@@ -1,0 +1,24 @@
+
+import sys
+
+# Entrada de dados com tratamento de erro
+try:
+   intAno = int(input('Informe um ano (ex: 2024): '))
+# Tratamento de erro para valores não numéricos
+except ValueError:
+   sys.exit('ERRO: Você deve digitar um valor numérico inteiro.')
+# Tratamento de erro para outros tipos de erro
+except Exception as strErro:
+   sys.exit(f'ERRO: {strErro}')
+# Verificação se o ano é bissexto caso tenha passado pelas validações
+else:
+
+   # Verifica se o ano é menor ou igual a zero
+   if intAno <= 0:
+      sys.exit('ERRO: O ano deve ser maior que zero.')
+
+   # Verifica se o ano é bissexto
+   if (intAno % 4 == 0 and intAno % 100 != 0) or (intAno % 400 == 0):
+      print(f'O ano {intAno} é bissexto.')
+   else:
+      print(f'O ano {intAno} não é bissexto.')  

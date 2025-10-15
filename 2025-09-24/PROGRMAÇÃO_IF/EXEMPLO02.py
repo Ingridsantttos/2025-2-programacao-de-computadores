@@ -28,7 +28,7 @@ altura = float(input("digite a altura em metros: "))
 if altura<= 0:
  print("a altura deve ser maior que zero.")
 else:
- imc = peso / (altura *  altura)
+ imc = "peso" / (altura *  altura)
  print(f"nseu IMC é: {imc: .2f}")
  if imc < 18.5:
   print("classificação: abaixo peso")  
@@ -40,5 +40,5 @@ elif imc < 35:
    print("classificação: obesidade grau I")
 else:
    print("classificação: obesidade grau II")
-except ValueError
+"except ValueError"
 print("entrada inválida. Digite valores numéricos")
