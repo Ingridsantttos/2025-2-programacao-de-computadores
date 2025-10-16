@@ -41,3 +41,25 @@ b = float(input("digite o comprimento do lado b: "))
 c= float(input("digite o comnprimento do lado c: "))
 # verificar s e formar um triângulo
 if (a+b>c)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
